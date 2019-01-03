@@ -1,0 +1,5 @@
+%{
+  "circuit_breaker": {:git, "https://github.com/klarna/circuit_breaker.git", "e64b102b7eacf7bed061dd2fad6ccadb3bd8dca9", [tag: "1.0.1"]},
+  "propcheck": {:hex, :propcheck, "1.0.6", "c206366e4870432be73eedd7309e2e2a489561b52f355f709dc500ee8386a873", [], [{:proper, "~> 1.2.0", [hex: :proper, repo: "hexpm", optional: false]}], "hexpm"},
+  "proper": {:hex, :proper, "1.2.0", "1466492385959412a02871505434e72e92765958c60dba144b43863554b505a4", [], [], "hexpm"},
+}

@@ -1,0 +1,6 @@
+%{
+  "eql": {:hex, :eql, "0.1.2", "c95d7e9635a914a9c70983129f4d86dc5da70877f39f01785c274da35be45ad4", [], [], "hexpm"},
+  "pgsql": {:hex, :pgsql, "26.0.2", "0b77a5f7714aa1eea7756ef03d5f6b08455208836431dd9bbdd1f9a97fbec947", [], [], "hexpm"},
+  "propcheck": {:hex, :propcheck, "1.0.6", "c206366e4870432be73eedd7309e2e2a489561b52f355f709dc500ee8386a873", [], [{:proper, "~> 1.2.0", [hex: :proper, repo: "hexpm", optional: false]}], "hexpm"},
+  "proper": {:hex, :proper, "1.2.0", "1466492385959412a02871505434e72e92765958c60dba144b43863554b505a4", [], [], "hexpm"},
+}

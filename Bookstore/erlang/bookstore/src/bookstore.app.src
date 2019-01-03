@@ -1,0 +1,18 @@
+{application, bookstore,
+ [{description, "Handling books and book accessories"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { bookstore_app, []}},
+  {applications, [kernel, stdlib, eql, pgsql]},
+  {env,[
+      {pg, [
+          {user, "ferd"}, % replace with your own $USER
+          {password, ""},
+          {database, "bookstore_db"}, % as specified by bookstore_init.erl
+          {host, "127.0.0.1"},
+          {port, 5432},
+          {ssl, false} % not for tests!
+      ]}
+  ]},
+  {modules, []}
+ ]}.

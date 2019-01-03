@@ -1,0 +1,3 @@
+===> Failed test cases:
+prop_demo:prop_demo() -> false (only properties that return `true' are
+seen as passing)

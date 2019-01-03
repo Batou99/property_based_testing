@@ -1,0 +1,1324 @@
+2018-06-28 20:58:16.041 EDT [4865] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-06-28 20:58:16.041 EDT [4865] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-28 20:58:16.041 EDT [4865] LOG:  could not bind IPv6 address "fe80::1%lo0": Address already in use
+2018-06-28 20:58:16.041 EDT [4865] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-28 20:58:16.041 EDT [4865] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-06-28 20:58:16.041 EDT [4865] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-28 20:58:16.041 EDT [4865] WARNING:  could not create listen socket for "localhost"
+2018-06-28 20:58:16.041 EDT [4865] FATAL:  could not create any TCP/IP sockets
+2018-06-28 20:58:16.042 EDT [4865] LOG:  database system is shut down
+2018-06-28 22:01:08.575 EDT [6181] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-06-28 22:01:08.575 EDT [6181] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-28 22:01:08.575 EDT [6181] LOG:  could not bind IPv6 address "fe80::1%lo0": Address already in use
+2018-06-28 22:01:08.575 EDT [6181] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-28 22:01:08.575 EDT [6181] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-06-28 22:01:08.575 EDT [6181] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-28 22:01:08.575 EDT [6181] WARNING:  could not create listen socket for "localhost"
+2018-06-28 22:01:08.575 EDT [6181] FATAL:  could not create any TCP/IP sockets
+2018-06-28 22:01:08.576 EDT [6181] LOG:  database system is shut down
+2018-06-29 20:45:56.862 EDT [1594] LOG:  listening on IPv6 address "::1", port 5432
+2018-06-29 20:45:56.862 EDT [1594] LOG:  listening on IPv6 address "fe80::1%lo0", port 5432
+2018-06-29 20:45:56.862 EDT [1594] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-06-29 20:45:56.864 EDT [1594] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-06-29 20:45:56.886 EDT [1595] LOG:  database system was shut down at 2018-06-29 20:45:56 EDT
+2018-06-29 20:45:56.898 EDT [1594] LOG:  database system is ready to accept connections
+2018-06-30 14:53:41.529 EDT [4667] ERROR:  relation "books" already exists
+2018-06-30 14:53:41.529 EDT [4667] STATEMENT:  CREATE TABLE books (   isbn varchar(20) PRIMARY KEY,   title varchar(256) NOT NULL,   author varchar(256) NOT NULL,   owned smallint DEFAULT 0,   available smallint DEFAULT 0 );
+2018-06-30 14:53:41.545 EDT [4668] ERROR:  relation "books" already exists
+2018-06-30 14:53:41.545 EDT [4668] STATEMENT:  CREATE TABLE books (   isbn varchar(20) PRIMARY KEY,   title varchar(256) NOT NULL,   author varchar(256) NOT NULL,   owned smallint DEFAULT 0,   available smallint DEFAULT 0 );
+2018-06-30 14:55:58.462 EDT [4749] ERROR:  relation "books" already exists
+2018-06-30 14:55:58.462 EDT [4749] STATEMENT:  CREATE TABLE books (   isbn varchar(20) PRIMARY KEY,   title varchar(256) NOT NULL,   author varchar(256) NOT NULL,   owned smallint DEFAULT 0,   available smallint DEFAULT 0 );
+2018-06-30 14:56:25.776 EDT [4785] ERROR:  relation "books" already exists
+2018-06-30 14:56:25.776 EDT [4785] STATEMENT:  CREATE TABLE books (   isbn varchar(20) PRIMARY KEY,   title varchar(256) NOT NULL,   author varchar(256) NOT NULL,   owned smallint DEFAULT 0,   available smallint DEFAULT 0 );
+2018-06-30 14:56:28.357 EDT [4924] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:28.357 EDT [4924] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:30.435 EDT [5045] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:30.435 EDT [5045] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 14:56:32.368 EDT [5161] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:32.368 EDT [5161] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:33.171 EDT [5212] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:33.171 EDT [5212] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 14:56:34.272 EDT [5277] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:34.272 EDT [5277] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:34.330 EDT [5281] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:34.330 EDT [5281] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:35.272 EDT [5338] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:35.272 EDT [5338] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:35.625 EDT [5357] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:35.625 EDT [5357] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:36.223 EDT [5394] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:36.223 EDT [5394] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:37.641 EDT [5482] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:37.641 EDT [5482] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:37.689 EDT [5485] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:37.689 EDT [5485] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:38.223 EDT [5518] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:38.223 EDT [5518] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:39.265 EDT [5581] ERROR:  value too long for type character varying(256)
+2018-06-30 14:56:39.265 EDT [5581] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:40.885 EDT [5676] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:40.885 EDT [5676] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 14:56:41.563 EDT [5717] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:41.563 EDT [5717] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:41.847 EDT [5732] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:41.847 EDT [5732] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:42.248 EDT [5759] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:42.248 EDT [5759] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 14:56:42.472 EDT [5771] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 14:56:42.472 EDT [5771] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 15:38:22.859 EDT [6563] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:22.859 EDT [6563] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 15:38:24.439 EDT [6653] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:24.439 EDT [6653] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:25.143 EDT [6694] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:25.143 EDT [6694] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 15:38:28.018 EDT [6857] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:28.018 EDT [6857] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 15:38:28.078 EDT [6861] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:28.078 EDT [6861] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:29.610 EDT [6951] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:29.610 EDT [6951] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 15:38:30.199 EDT [6986] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:30.199 EDT [6986] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:30.229 EDT [6988] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:30.229 EDT [6988] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 15:38:30.531 EDT [7003] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:30.531 EDT [7003] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:31.054 EDT [7035] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:31.054 EDT [7035] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:31.139 EDT [7040] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:31.139 EDT [7040] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 15:38:31.600 EDT [7066] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:31.600 EDT [7066] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:33.258 EDT [7163] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:33.258 EDT [7163] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:33.414 EDT [7173] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:33.414 EDT [7173] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:33.949 EDT [7202] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:33.949 EDT [7202] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:34.233 EDT [7219] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:34.233 EDT [7219] STATEMENT:  SELECT * FROM books WHERE author LIKE $1;
+2018-06-30 15:38:34.375 EDT [7227] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:34.375 EDT [7227] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:34.707 EDT [7246] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:34.707 EDT [7246] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:35.031 EDT [7264] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:35.031 EDT [7264] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:35.900 EDT [7313] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:35.900 EDT [7313] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:37.203 EDT [7389] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:37.203 EDT [7389] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 15:38:37.947 EDT [7428] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-06-30 15:38:37.947 EDT [7428] STATEMENT:  SELECT * FROM books WHERE title LIKE $1;
+2018-06-30 22:16:10.943 EDT [9546] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:10.943 EDT [9546] DETAIL:  Key (isbn)=(0-0-6168864-1) already exists.
+2018-06-30 22:16:10.943 EDT [9546] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.466 EDT [9675] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.466 EDT [9675] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.466 EDT [9675] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.481 EDT [9676] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.481 EDT [9676] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.481 EDT [9676] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.625 EDT [9681] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.625 EDT [9681] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.625 EDT [9681] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.642 EDT [9682] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.642 EDT [9682] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.642 EDT [9682] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.736 EDT [9687] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.736 EDT [9687] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.736 EDT [9687] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.753 EDT [9688] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.753 EDT [9688] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.753 EDT [9688] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.825 EDT [9692] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.825 EDT [9692] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.825 EDT [9692] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.839 EDT [9693] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.839 EDT [9693] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.839 EDT [9693] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.908 EDT [9697] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.908 EDT [9697] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.908 EDT [9697] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:13.998 EDT [9702] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:13.998 EDT [9702] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:13.998 EDT [9702] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:14.086 EDT [9707] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:14.086 EDT [9707] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:14.086 EDT [9707] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-06-30 22:16:14.179 EDT [9712] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-06-30 22:16:14.179 EDT [9712] DETAIL:  Key (isbn)=(99957-3-980-8) already exists.
+2018-06-30 22:16:14.179 EDT [9712] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:30:08.163 EDT [13580] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:30:08.163 EDT [13580] DETAIL:  Key (isbn)=(92-615707-2-X) already exists.
+2018-07-01 14:30:08.163 EDT [13580] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:30:08.297 EDT [13586] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:30:08.297 EDT [13586] DETAIL:  Key (isbn)=(92-615707-2-X) already exists.
+2018-07-01 14:30:08.297 EDT [13586] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:30:08.383 EDT [13591] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:30:08.383 EDT [13591] DETAIL:  Key (isbn)=(92-615707-2-X) already exists.
+2018-07-01 14:30:08.383 EDT [13591] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:30:08.455 EDT [13595] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:30:08.455 EDT [13595] DETAIL:  Key (isbn)=(92-615707-2-X) already exists.
+2018-07-01 14:30:08.455 EDT [13595] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:30:08.538 EDT [13600] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:30:08.538 EDT [13600] DETAIL:  Key (isbn)=(92-615707-2-X) already exists.
+2018-07-01 14:30:08.538 EDT [13600] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:30:08.627 EDT [13605] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:30:08.627 EDT [13605] DETAIL:  Key (isbn)=(92-615707-2-X) already exists.
+2018-07-01 14:30:08.627 EDT [13605] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:32:14.637 EDT [13770] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:32:14.637 EDT [13770] DETAIL:  Key (isbn)=(979-7-3881-3763-X) already exists.
+2018-07-01 14:32:14.637 EDT [13770] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:32:14.843 EDT [13780] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:32:14.843 EDT [13780] DETAIL:  Key (isbn)=(90-4802-332-X) already exists.
+2018-07-01 14:32:14.843 EDT [13780] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:33:40.450 EDT [14000] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:33:40.450 EDT [14000] DETAIL:  Key (isbn)=(99944-782-7-9) already exists.
+2018-07-01 14:33:40.450 EDT [14000] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 14:45:26.323 EDT [14510] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 14:45:26.323 EDT [14510] DETAIL:  Key (isbn)=(958-641-800-X) already exists.
+2018-07-01 14:45:26.323 EDT [14510] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:03.503 EDT [16620] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:03.503 EDT [16620] DETAIL:  Key (isbn)=(620-97-5511-X) already exists.
+2018-07-01 16:13:03.503 EDT [16620] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:04.073 EDT [16653] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:04.073 EDT [16653] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:04.473 EDT [16676] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:04.473 EDT [16676] DETAIL:  Key (isbn)=(92-5-412477-X) already exists.
+2018-07-01 16:13:04.473 EDT [16676] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:04.661 EDT [16686] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:04.661 EDT [16686] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:04.834 EDT [16692] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:04.834 EDT [16692] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:04.949 EDT [16698] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:04.949 EDT [16698] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:05.095 EDT [16706] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:05.095 EDT [16706] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:05.152 EDT [16709] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:05.152 EDT [16709] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:05.211 EDT [16712] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:05.211 EDT [16712] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:05.343 EDT [16717] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:05.343 EDT [16717] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:05.418 EDT [16720] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:13:05.418 EDT [16720] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:18.185 EDT [16870] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:18.185 EDT [16870] DETAIL:  Key (isbn)=(980-13987-3-X) already exists.
+2018-07-01 16:13:18.185 EDT [16870] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:19.327 EDT [16935] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:19.327 EDT [16935] DETAIL:  Key (isbn)=(979-7-747282-98-X) already exists.
+2018-07-01 16:13:19.327 EDT [16935] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:19.631 EDT [16952] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:19.631 EDT [16952] DETAIL:  Key (isbn)=(978-950-4038-48-X) already exists.
+2018-07-01 16:13:19.631 EDT [16952] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:20.532 EDT [17004] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:20.532 EDT [17004] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:20.532 EDT [17004] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:20.804 EDT [17016] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:20.804 EDT [17016] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:20.804 EDT [17016] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:20.974 EDT [17026] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:20.974 EDT [17026] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:20.974 EDT [17026] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:21.224 EDT [17042] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:21.224 EDT [17042] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:21.224 EDT [17042] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:21.430 EDT [17055] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:21.430 EDT [17055] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:21.430 EDT [17055] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:21.739 EDT [17073] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:21.739 EDT [17073] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:21.739 EDT [17073] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:21.881 EDT [17082] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:21.881 EDT [17082] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:21.881 EDT [17082] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:13:22.054 EDT [17092] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:13:22.054 EDT [17092] DETAIL:  Key (isbn)=(978-1-26-643336-4) already exists.
+2018-07-01 16:13:22.054 EDT [17092] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:37.543 EDT [17321] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:37.543 EDT [17321] DETAIL:  Key (isbn)=(978-7-04-521670-8) already exists.
+2018-07-01 16:14:37.543 EDT [17321] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:38.475 EDT [17374] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:38.475 EDT [17374] DETAIL:  Key (isbn)=(84-1-634200-8) already exists.
+2018-07-01 16:14:38.475 EDT [17374] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:39.170 EDT [17414] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:39.170 EDT [17414] DETAIL:  Key (isbn)=(88-70-18009-X) already exists.
+2018-07-01 16:14:39.170 EDT [17414] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:39.324 EDT [17423] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:39.324 EDT [17423] DETAIL:  Key (isbn)=(978-94-7-434980-X) already exists.
+2018-07-01 16:14:39.324 EDT [17423] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:40.128 EDT [17470] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:40.128 EDT [17470] DETAIL:  Key (isbn)=(605-28-6417-X) already exists.
+2018-07-01 16:14:40.128 EDT [17470] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:41.059 EDT [17524] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:41.059 EDT [17524] DETAIL:  Key (isbn)=(981-3241-00-X) already exists.
+2018-07-01 16:14:41.059 EDT [17524] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:41.264 EDT [17536] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:41.264 EDT [17536] DETAIL:  Key (isbn)=(978-9965-4-9283-2) already exists.
+2018-07-01 16:14:41.264 EDT [17536] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:41.623 EDT [17556] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:41.623 EDT [17556] DETAIL:  Key (isbn)=(978-4-885-37738-2) already exists.
+2018-07-01 16:14:41.623 EDT [17556] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:41.687 EDT [17560] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:41.687 EDT [17560] DETAIL:  Key (isbn)=(979-7-592777-92-4) already exists.
+2018-07-01 16:14:41.687 EDT [17560] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:42.739 EDT [17622] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:42.739 EDT [17622] DETAIL:  Key (isbn)=(82-8748-921-X) already exists.
+2018-07-01 16:14:42.739 EDT [17622] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:43.231 EDT [17652] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:43.231 EDT [17652] DETAIL:  Key (isbn)=(9963-3-7211-4) already exists.
+2018-07-01 16:14:43.231 EDT [17652] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:43.348 EDT [17659] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:14:43.348 EDT [17659] DETAIL:  Key (isbn)=(99917-042-9-X) already exists.
+2018-07-01 16:14:43.348 EDT [17659] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:43.854 EDT [17687] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:43.854 EDT [17687] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.053 EDT [17694] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.053 EDT [17694] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.215 EDT [17703] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.215 EDT [17703] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.276 EDT [17706] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.276 EDT [17706] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.334 EDT [17709] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.334 EDT [17709] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.393 EDT [17712] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.393 EDT [17712] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.554 EDT [17717] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.554 EDT [17717] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:14:44.631 EDT [17720] ERROR:  value too long for type character varying(256)
+2018-07-01 16:14:44.631 EDT [17720] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:16:44.732 EDT [17770] ERROR:  value too long for type character varying(256)
+2018-07-01 16:16:44.732 EDT [17770] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.009 EDT [17945] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:17:08.009 EDT [17945] DETAIL:  Key (isbn)=(80-963-9490-X) already exists.
+2018-07-01 16:17:08.009 EDT [17945] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.344 EDT [17964] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.344 EDT [17964] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.475 EDT [17969] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.475 EDT [17969] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.605 EDT [17976] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.605 EDT [17976] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.725 EDT [17982] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.725 EDT [17982] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.783 EDT [17985] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.783 EDT [17985] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.906 EDT [17990] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.906 EDT [17990] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:17:08.969 EDT [17993] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:17:08.969 EDT [17993] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.057 EDT [18148] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.057 EDT [18148] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.347 EDT [18163] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.347 EDT [18163] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.418 EDT [18167] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.418 EDT [18167] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.496 EDT [18171] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.496 EDT [18171] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.569 EDT [18175] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.569 EDT [18175] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.644 EDT [18178] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.644 EDT [18178] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.705 EDT [18181] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.705 EDT [18181] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.821 EDT [18186] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.821 EDT [18186] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:21:29.887 EDT [18189] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:21:29.887 EDT [18189] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:24:34.552 EDT [18383] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:24:34.552 EDT [18383] DETAIL:  Key (isbn)=(979-615-8-08763-X) already exists.
+2018-07-01 16:24:34.552 EDT [18383] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:24:59.065 EDT [18622] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:24:59.065 EDT [18622] DETAIL:  Key (isbn)=(979-80-2160-914-4) already exists.
+2018-07-01 16:24:59.065 EDT [18622] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:24:59.686 EDT [18654] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:24:59.686 EDT [18654] DETAIL:  Key (isbn)=(2-00-540442-X) already exists.
+2018-07-01 16:24:59.686 EDT [18654] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:24:59.768 EDT [18659] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:24:59.768 EDT [18659] DETAIL:  Key (isbn)=(2-00-540442-X) already exists.
+2018-07-01 16:24:59.768 EDT [18659] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:24:59.897 EDT [18666] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:24:59.897 EDT [18666] DETAIL:  Key (isbn)=(979-7-9-5357087-8) already exists.
+2018-07-01 16:24:59.897 EDT [18666] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:01.806 EDT [18774] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:25:01.806 EDT [18774] DETAIL:  Key (isbn)=(979-3-0-3284050-6) already exists.
+2018-07-01 16:25:01.806 EDT [18774] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:02.719 EDT [18824] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:25:02.719 EDT [18824] DETAIL:  Key (isbn)=(979-607-55174-4-X) already exists.
+2018-07-01 16:25:02.719 EDT [18824] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:02.756 EDT [18826] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:25:02.756 EDT [18826] DETAIL:  Key (isbn)=(979-607-55174-4-X) already exists.
+2018-07-01 16:25:02.756 EDT [18826] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.110 EDT [18847] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:25:03.110 EDT [18847] DETAIL:  Key (isbn)=(87-540812-9-X) already exists.
+2018-07-01 16:25:03.110 EDT [18847] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.495 EDT [18869] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:03.495 EDT [18869] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.611 EDT [18874] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:03.611 EDT [18874] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.700 EDT [18879] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:03.700 EDT [18879] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.770 EDT [18883] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:03.770 EDT [18883] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.902 EDT [18890] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:03.902 EDT [18890] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:03.973 EDT [18893] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:03.973 EDT [18893] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:04.032 EDT [18896] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:04.032 EDT [18896] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:04.154 EDT [18901] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:04.154 EDT [18901] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:25:04.223 EDT [18904] ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+2018-07-01 16:25:04.223 EDT [18904] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:29:51.182 EDT [19024] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:29:51.182 EDT [19024] DETAIL:  Key (isbn)=(978-99916-2-138-3) already exists.
+2018-07-01 16:29:51.182 EDT [19024] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:29:52.188 EDT [19081] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:29:52.188 EDT [19081] DETAIL:  Key (isbn)=(99938-65-06-X) already exists.
+2018-07-01 16:29:52.188 EDT [19081] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:29:52.598 EDT [19103] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:29:52.598 EDT [19103] DETAIL:  Key (isbn)=(978-90-5-761933-X) already exists.
+2018-07-01 16:29:52.598 EDT [19103] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:29:53.063 EDT [19129] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:29:53.063 EDT [19129] DETAIL:  Key (isbn)=(979-7-1335-5338-X) already exists.
+2018-07-01 16:29:53.063 EDT [19129] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:10.433 EDT [19490] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:10.433 EDT [19490] DETAIL:  Key (isbn)=(9963-1-2715-X) already exists.
+2018-07-01 16:37:10.433 EDT [19490] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:11.043 EDT [19526] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:11.043 EDT [19526] DETAIL:  Key (isbn)=(7-4487-2063-X) already exists.
+2018-07-01 16:37:11.043 EDT [19526] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:11.150 EDT [19533] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:11.150 EDT [19533] DETAIL:  Key (isbn)=(7-4487-2063-X) already exists.
+2018-07-01 16:37:11.150 EDT [19533] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:11.523 EDT [19554] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:11.523 EDT [19554] DETAIL:  Key (isbn)=(978-985-852-402-2) already exists.
+2018-07-01 16:37:11.523 EDT [19554] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:11.820 EDT [19571] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:11.820 EDT [19571] DETAIL:  Key (isbn)=(2-489-16171-X) already exists.
+2018-07-01 16:37:11.820 EDT [19571] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:12.352 EDT [19602] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:12.352 EDT [19602] DETAIL:  Key (isbn)=(978-3-458518-66-X) already exists.
+2018-07-01 16:37:12.352 EDT [19602] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:12.382 EDT [19604] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:12.382 EDT [19604] DETAIL:  Key (isbn)=(978-3-458518-66-X) already exists.
+2018-07-01 16:37:12.382 EDT [19604] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:12.687 EDT [19621] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:12.687 EDT [19621] DETAIL:  Key (isbn)=(978-7-065-48680-0) already exists.
+2018-07-01 16:37:12.687 EDT [19621] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:14.291 EDT [19715] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:14.291 EDT [19715] DETAIL:  Key (isbn)=(979-620-4-15500-7) already exists.
+2018-07-01 16:37:14.291 EDT [19715] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:14.336 EDT [19718] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:14.336 EDT [19718] DETAIL:  Key (isbn)=(979-620-4-15500-7) already exists.
+2018-07-01 16:37:14.336 EDT [19718] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:14.397 EDT [19722] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:14.397 EDT [19722] DETAIL:  Key (isbn)=(979-620-4-15500-7) already exists.
+2018-07-01 16:37:14.397 EDT [19722] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:14.444 EDT [19725] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:14.444 EDT [19725] DETAIL:  Key (isbn)=(979-620-4-15500-7) already exists.
+2018-07-01 16:37:14.444 EDT [19725] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:14.610 EDT [19734] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:14.610 EDT [19734] DETAIL:  Key (isbn)=(99972-6-397-2) already exists.
+2018-07-01 16:37:14.610 EDT [19734] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:14.990 EDT [19756] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:14.990 EDT [19756] DETAIL:  Key (isbn)=(978-99934-300-8-X) already exists.
+2018-07-01 16:37:14.990 EDT [19756] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:15.636 EDT [19792] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:15.636 EDT [19792] DETAIL:  Key (isbn)=(979-608-7-40334-7) already exists.
+2018-07-01 16:37:15.636 EDT [19792] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:15.756 EDT [19800] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:15.756 EDT [19800] DETAIL:  Key (isbn)=(91-309202-0-X) already exists.
+2018-07-01 16:37:15.756 EDT [19800] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:16.550 EDT [19845] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:16.550 EDT [19845] DETAIL:  Key (isbn)=(9964-918-02-8) already exists.
+2018-07-01 16:37:16.550 EDT [19845] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:37:18.848 EDT [19981] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:37:18.848 EDT [19981] DETAIL:  Key (isbn)=(978-90-717922-5-X) already exists.
+2018-07-01 16:37:18.848 EDT [19981] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:39:58.739 EDT [20283] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:39:58.739 EDT [20283] DETAIL:  Key (isbn)=(978-2-0-5729391-X) already exists.
+2018-07-01 16:39:58.739 EDT [20283] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:39:59.808 EDT [20342] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:39:59.808 EDT [20342] DETAIL:  Key (isbn)=(978-2-5-9077532-X) already exists.
+2018-07-01 16:39:59.808 EDT [20342] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:00.604 EDT [20387] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:00.604 EDT [20387] DETAIL:  Key (isbn)=(978-614-612-467-X) already exists.
+2018-07-01 16:40:00.604 EDT [20387] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:02.108 EDT [20472] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:02.108 EDT [20472] DETAIL:  Key (isbn)=(99931-8-193-X) already exists.
+2018-07-01 16:40:02.108 EDT [20472] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:03.037 EDT [20525] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:03.037 EDT [20525] DETAIL:  Key (isbn)=(9965-2124-7-X) already exists.
+2018-07-01 16:40:03.037 EDT [20525] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:03.647 EDT [20561] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:03.647 EDT [20561] DETAIL:  Key (isbn)=(979-606-905-464-X) already exists.
+2018-07-01 16:40:03.647 EDT [20561] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:04.021 EDT [20582] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:04.021 EDT [20582] DETAIL:  Key (isbn)=(978-976-2-56390-0) already exists.
+2018-07-01 16:40:04.021 EDT [20582] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:04.632 EDT [20617] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:04.632 EDT [20617] DETAIL:  Key (isbn)=(7-99-202753-X) already exists.
+2018-07-01 16:40:04.632 EDT [20617] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:05.687 EDT [20680] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:05.687 EDT [20680] DETAIL:  Key (isbn)=(979-602-43-1252-X) already exists.
+2018-07-01 16:40:05.687 EDT [20680] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:06.588 EDT [20727] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:06.588 EDT [20727] DETAIL:  Key (isbn)=(99957-3-983-X) already exists.
+2018-07-01 16:40:06.588 EDT [20727] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:07.040 EDT [20754] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:07.040 EDT [20754] DETAIL:  Key (isbn)=(7-663-91867-5) already exists.
+2018-07-01 16:40:07.040 EDT [20754] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:07.466 EDT [20780] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:07.466 EDT [20780] DETAIL:  Key (isbn)=(979-7-65-240456-3) already exists.
+2018-07-01 16:40:07.466 EDT [20780] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:08.095 EDT [20818] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:08.095 EDT [20818] DETAIL:  Key (isbn)=(978-980-4-69515-X) already exists.
+2018-07-01 16:40:08.095 EDT [20818] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:08.234 EDT [20827] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:08.234 EDT [20827] DETAIL:  Key (isbn)=(1-34414-699-2) already exists.
+2018-07-01 16:40:08.234 EDT [20827] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:09.295 EDT [20886] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:09.295 EDT [20886] DETAIL:  Key (isbn)=(1-34158-491-X) already exists.
+2018-07-01 16:40:09.295 EDT [20886] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:09.311 EDT [20887] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:09.311 EDT [20887] DETAIL:  Key (isbn)=(1-34158-491-X) already exists.
+2018-07-01 16:40:09.311 EDT [20887] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:09.430 EDT [20893] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:09.430 EDT [20893] DETAIL:  Key (isbn)=(92-230-4746-7) already exists.
+2018-07-01 16:40:09.430 EDT [20893] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:09.893 EDT [20920] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:09.893 EDT [20920] DETAIL:  Key (isbn)=(978-611-635-065-4) already exists.
+2018-07-01 16:40:09.893 EDT [20920] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:10.396 EDT [20948] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:10.396 EDT [20948] DETAIL:  Key (isbn)=(979-9976-9-0872-2) already exists.
+2018-07-01 16:40:10.396 EDT [20948] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:10.493 EDT [20953] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:10.493 EDT [20953] DETAIL:  Key (isbn)=(99944-387-2-X) already exists.
+2018-07-01 16:40:10.493 EDT [20953] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:10.855 EDT [20974] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:10.855 EDT [20974] DETAIL:  Key (isbn)=(978-957-3474-14-8) already exists.
+2018-07-01 16:40:10.855 EDT [20974] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:10.946 EDT [20980] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:10.946 EDT [20980] DETAIL:  Key (isbn)=(978-957-3474-14-8) already exists.
+2018-07-01 16:40:10.946 EDT [20980] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:12.701 EDT [21079] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:12.701 EDT [21079] DETAIL:  Key (isbn)=(978-9933-722-82-X) already exists.
+2018-07-01 16:40:12.701 EDT [21079] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:12.822 EDT [21087] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:12.822 EDT [21087] DETAIL:  Key (isbn)=(978-9933-722-82-X) already exists.
+2018-07-01 16:40:12.822 EDT [21087] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:13.459 EDT [21124] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:13.459 EDT [21124] DETAIL:  Key (isbn)=(979-3-794-78811-5) already exists.
+2018-07-01 16:40:13.459 EDT [21124] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:13.995 EDT [21155] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:13.995 EDT [21155] DETAIL:  Key (isbn)=(99906-2-189-X) already exists.
+2018-07-01 16:40:13.995 EDT [21155] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:14.039 EDT [21158] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:14.039 EDT [21158] DETAIL:  Key (isbn)=(99906-2-189-X) already exists.
+2018-07-01 16:40:14.039 EDT [21158] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:14.246 EDT [21172] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:14.246 EDT [21172] DETAIL:  Key (isbn)=(99906-2-189-X) already exists.
+2018-07-01 16:40:14.246 EDT [21172] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:14.483 EDT [21184] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:14.483 EDT [21184] DETAIL:  Key (isbn)=(978-99959-36-14-6) already exists.
+2018-07-01 16:40:14.483 EDT [21184] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:14.562 EDT [21189] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:14.562 EDT [21189] DETAIL:  Key (isbn)=(978-99959-36-14-6) already exists.
+2018-07-01 16:40:14.562 EDT [21189] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:14.577 EDT [21190] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:14.577 EDT [21190] DETAIL:  Key (isbn)=(978-99959-36-14-6) already exists.
+2018-07-01 16:40:14.577 EDT [21190] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:14.591 EDT [21191] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:14.591 EDT [21191] DETAIL:  Key (isbn)=(978-99959-36-14-6) already exists.
+2018-07-01 16:40:14.591 EDT [21191] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:15.213 EDT [21227] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:15.213 EDT [21227] DETAIL:  Key (isbn)=(99905-14-39-X) already exists.
+2018-07-01 16:40:15.213 EDT [21227] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:15.394 EDT [21238] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:15.394 EDT [21238] DETAIL:  Key (isbn)=(977-0767-00-X) already exists.
+2018-07-01 16:40:15.394 EDT [21238] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:15.798 EDT [21261] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:15.798 EDT [21261] DETAIL:  Key (isbn)=(978-83-67-60380-8) already exists.
+2018-07-01 16:40:15.798 EDT [21261] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:16.225 EDT [21283] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:16.225 EDT [21283] DETAIL:  Key (isbn)=(978-609-9291-99-7) already exists.
+2018-07-01 16:40:16.225 EDT [21283] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:16.394 EDT [21294] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:16.394 EDT [21294] DETAIL:  Key (isbn)=(978-609-9291-99-7) already exists.
+2018-07-01 16:40:16.394 EDT [21294] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:16.936 EDT [21325] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:16.936 EDT [21325] DETAIL:  Key (isbn)=(979-99945-69-23-X) already exists.
+2018-07-01 16:40:16.936 EDT [21325] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:17.434 EDT [21351] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:17.434 EDT [21351] DETAIL:  Key (isbn)=(978-0-983-61487-X) already exists.
+2018-07-01 16:40:17.434 EDT [21351] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:17.827 EDT [21374] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:17.827 EDT [21374] DETAIL:  Key (isbn)=(979-90-593702-9-X) already exists.
+2018-07-01 16:40:17.827 EDT [21374] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:18.336 EDT [21402] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:18.336 EDT [21402] DETAIL:  Key (isbn)=(963-541-504-2) already exists.
+2018-07-01 16:40:18.336 EDT [21402] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:18.674 EDT [21420] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:18.674 EDT [21420] DETAIL:  Key (isbn)=(978-94-3-913457-X) already exists.
+2018-07-01 16:40:18.674 EDT [21420] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:18.705 EDT [21422] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:18.705 EDT [21422] DETAIL:  Key (isbn)=(978-94-3-913457-X) already exists.
+2018-07-01 16:40:18.705 EDT [21422] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:18.721 EDT [21423] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:18.721 EDT [21423] DETAIL:  Key (isbn)=(978-94-3-913457-X) already exists.
+2018-07-01 16:40:18.721 EDT [21423] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 16:40:19.297 EDT [21457] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 16:40:19.297 EDT [21457] DETAIL:  Key (isbn)=(612-9242-32-0) already exists.
+2018-07-01 16:40:19.297 EDT [21457] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:36.019 EDT [21749] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:36.019 EDT [21749] DETAIL:  Key (isbn)=(979-7-9883745-1-X) already exists.
+2018-07-01 17:00:36.019 EDT [21749] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:37.074 EDT [21813] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:37.074 EDT [21813] DETAIL:  Key (isbn)=(983-296-517-X) already exists.
+2018-07-01 17:00:37.074 EDT [21813] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:37.114 EDT [21816] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:37.114 EDT [21816] DETAIL:  Key (isbn)=(983-296-517-X) already exists.
+2018-07-01 17:00:37.114 EDT [21816] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:37.416 EDT [21834] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:37.416 EDT [21834] DETAIL:  Key (isbn)=(600-869-872-X) already exists.
+2018-07-01 17:00:37.416 EDT [21834] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:38.703 EDT [21914] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:38.703 EDT [21914] DETAIL:  Key (isbn)=(92-273-9740-X) already exists.
+2018-07-01 17:00:38.703 EDT [21914] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:39.340 EDT [21952] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:39.340 EDT [21952] DETAIL:  Key (isbn)=(7-957111-20-X) already exists.
+2018-07-01 17:00:39.340 EDT [21952] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:39.354 EDT [21953] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:39.354 EDT [21953] DETAIL:  Key (isbn)=(7-957111-20-X) already exists.
+2018-07-01 17:00:39.354 EDT [21953] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:39.520 EDT [21961] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:39.520 EDT [21961] DETAIL:  Key (isbn)=(7-900-90688-1) already exists.
+2018-07-01 17:00:39.520 EDT [21961] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:39.609 EDT [21966] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:39.609 EDT [21966] DETAIL:  Key (isbn)=(7-900-90688-1) already exists.
+2018-07-01 17:00:39.609 EDT [21966] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:39.638 EDT [21968] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:39.638 EDT [21968] DETAIL:  Key (isbn)=(7-900-90688-1) already exists.
+2018-07-01 17:00:39.638 EDT [21968] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:40.129 EDT [21996] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:40.129 EDT [21996] DETAIL:  Key (isbn)=(7-027991-46-X) already exists.
+2018-07-01 17:00:40.129 EDT [21996] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:40.253 EDT [22003] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:40.253 EDT [22003] DETAIL:  Key (isbn)=(978-7-6318-3717-7) already exists.
+2018-07-01 17:00:40.253 EDT [22003] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:40.283 EDT [22005] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:40.283 EDT [22005] DETAIL:  Key (isbn)=(978-7-6318-3717-7) already exists.
+2018-07-01 17:00:40.283 EDT [22005] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:40.297 EDT [22006] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:40.297 EDT [22006] DETAIL:  Key (isbn)=(978-7-6318-3717-7) already exists.
+2018-07-01 17:00:40.297 EDT [22006] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:40.364 EDT [22011] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:40.364 EDT [22011] DETAIL:  Key (isbn)=(978-7-6318-3717-7) already exists.
+2018-07-01 17:00:40.364 EDT [22011] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:40.409 EDT [22014] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:40.409 EDT [22014] DETAIL:  Key (isbn)=(978-7-6318-3717-7) already exists.
+2018-07-01 17:00:40.409 EDT [22014] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:43.493 EDT [22192] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:43.493 EDT [22192] DETAIL:  Key (isbn)=(973-09750-9-5) already exists.
+2018-07-01 17:00:43.493 EDT [22192] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:43.520 EDT [22194] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:43.520 EDT [22194] DETAIL:  Key (isbn)=(973-09750-9-5) already exists.
+2018-07-01 17:00:43.520 EDT [22194] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:43.533 EDT [22195] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:43.533 EDT [22195] DETAIL:  Key (isbn)=(973-09750-9-5) already exists.
+2018-07-01 17:00:43.533 EDT [22195] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:43.692 EDT [22203] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:43.692 EDT [22203] DETAIL:  Key (isbn)=(5-41-740695-6) already exists.
+2018-07-01 17:00:43.692 EDT [22203] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:43.854 EDT [22214] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:43.854 EDT [22214] DETAIL:  Key (isbn)=(5-41-740695-6) already exists.
+2018-07-01 17:00:43.854 EDT [22214] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:43.956 EDT [22221] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:43.956 EDT [22221] DETAIL:  Key (isbn)=(978-83-3131-395-8) already exists.
+2018-07-01 17:00:43.956 EDT [22221] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:44.532 EDT [22256] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:44.532 EDT [22256] DETAIL:  Key (isbn)=(978-7-4606280-9-X) already exists.
+2018-07-01 17:00:44.532 EDT [22256] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:44.812 EDT [22273] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:44.812 EDT [22273] DETAIL:  Key (isbn)=(978-7-20-122135-9) already exists.
+2018-07-01 17:00:44.812 EDT [22273] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:44.826 EDT [22274] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:44.826 EDT [22274] DETAIL:  Key (isbn)=(979-99938-6-427-X) already exists.
+2018-07-01 17:00:44.826 EDT [22274] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:45.664 EDT [22320] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:45.664 EDT [22320] DETAIL:  Key (isbn)=(94-313898-3-3) already exists.
+2018-07-01 17:00:45.664 EDT [22320] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:45.932 EDT [22334] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:45.932 EDT [22334] DETAIL:  Key (isbn)=(951-31-1191-X) already exists.
+2018-07-01 17:00:45.932 EDT [22334] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:46.224 EDT [22351] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:46.224 EDT [22351] DETAIL:  Key (isbn)=(978-93-5223-510-X) already exists.
+2018-07-01 17:00:46.224 EDT [22351] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:47.208 EDT [22413] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:47.208 EDT [22413] DETAIL:  Key (isbn)=(979-4-313782-66-X) already exists.
+2018-07-01 17:00:47.208 EDT [22413] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:47.223 EDT [22414] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:47.223 EDT [22414] DETAIL:  Key (isbn)=(979-4-313782-66-X) already exists.
+2018-07-01 17:00:47.223 EDT [22414] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:48.107 EDT [22463] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:48.107 EDT [22463] DETAIL:  Key (isbn)=(979-607-371-174-X) already exists.
+2018-07-01 17:00:48.107 EDT [22463] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:48.121 EDT [22464] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:48.121 EDT [22464] DETAIL:  Key (isbn)=(979-607-371-174-X) already exists.
+2018-07-01 17:00:48.121 EDT [22464] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:48.441 EDT [22483] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:48.441 EDT [22483] DETAIL:  Key (isbn)=(9980-201-03-8) already exists.
+2018-07-01 17:00:48.441 EDT [22483] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:49.526 EDT [22547] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:49.526 EDT [22547] DETAIL:  Key (isbn)=(5-64-508485-8) already exists.
+2018-07-01 17:00:49.526 EDT [22547] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:51.583 EDT [22669] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:51.583 EDT [22669] DETAIL:  Key (isbn)=(92-2837-446-X) already exists.
+2018-07-01 17:00:51.583 EDT [22669] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:52.857 EDT [22745] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:52.857 EDT [22745] DETAIL:  Key (isbn)=(979-85-582-0329-3) already exists.
+2018-07-01 17:00:52.857 EDT [22745] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:52.887 EDT [22747] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:52.887 EDT [22747] DETAIL:  Key (isbn)=(979-85-582-0329-3) already exists.
+2018-07-01 17:00:52.887 EDT [22747] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:52.918 EDT [22749] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:52.918 EDT [22749] DETAIL:  Key (isbn)=(979-85-582-0329-3) already exists.
+2018-07-01 17:00:52.918 EDT [22749] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:54.314 EDT [22829] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:54.314 EDT [22829] DETAIL:  Key (isbn)=(606-1-99350-5) already exists.
+2018-07-01 17:00:54.314 EDT [22829] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:54.533 EDT [22841] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:54.533 EDT [22841] DETAIL:  Key (isbn)=(9987-0-7334-X) already exists.
+2018-07-01 17:00:54.533 EDT [22841] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:55.272 EDT [22881] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:55.272 EDT [22881] DETAIL:  Key (isbn)=(978-620-07-5038-X) already exists.
+2018-07-01 17:00:55.272 EDT [22881] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:55.296 EDT [22882] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:55.296 EDT [22882] DETAIL:  Key (isbn)=(978-620-07-5038-X) already exists.
+2018-07-01 17:00:55.296 EDT [22882] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:55.930 EDT [22915] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:55.930 EDT [22915] DETAIL:  Key (isbn)=(608-1009-91-2) already exists.
+2018-07-01 17:00:55.930 EDT [22915] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:57.669 EDT [23016] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:57.669 EDT [23016] DETAIL:  Key (isbn)=(978-7-369064-87-8) already exists.
+2018-07-01 17:00:57.669 EDT [23016] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:58.448 EDT [23053] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:58.448 EDT [23053] DETAIL:  Key (isbn)=(87-5740-664-8) already exists.
+2018-07-01 17:00:58.448 EDT [23053] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:58.696 EDT [23069] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:58.696 EDT [23069] DETAIL:  Key (isbn)=(979-9965-990-71-X) already exists.
+2018-07-01 17:00:58.696 EDT [23069] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:59.936 EDT [23146] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:59.936 EDT [23146] DETAIL:  Key (isbn)=(602-451-444-5) already exists.
+2018-07-01 17:00:59.936 EDT [23146] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:00:59.966 EDT [23148] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:00:59.966 EDT [23148] DETAIL:  Key (isbn)=(602-451-444-5) already exists.
+2018-07-01 17:00:59.966 EDT [23148] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:00.043 EDT [23153] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:00.043 EDT [23153] DETAIL:  Key (isbn)=(602-451-444-5) already exists.
+2018-07-01 17:01:00.043 EDT [23153] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:01.500 EDT [23232] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:01.500 EDT [23232] DETAIL:  Key (isbn)=(979-7-3-8511928-X) already exists.
+2018-07-01 17:01:01.500 EDT [23232] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:01.780 EDT [23250] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:01.780 EDT [23250] DETAIL:  Key (isbn)=(979-7-3-8511928-X) already exists.
+2018-07-01 17:01:01.780 EDT [23250] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:02.180 EDT [23272] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:02.180 EDT [23272] DETAIL:  Key (isbn)=(979-2-89-503074-X) already exists.
+2018-07-01 17:01:02.180 EDT [23272] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:02.413 EDT [23286] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:02.413 EDT [23286] DETAIL:  Key (isbn)=(979-2-89-503074-X) already exists.
+2018-07-01 17:01:02.413 EDT [23286] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:02.574 EDT [23296] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:02.574 EDT [23296] DETAIL:  Key (isbn)=(979-2-89-503074-X) already exists.
+2018-07-01 17:01:02.574 EDT [23296] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:03.311 EDT [23335] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:03.311 EDT [23335] DETAIL:  Key (isbn)=(978-9974-6-6329-3) already exists.
+2018-07-01 17:01:03.311 EDT [23335] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:03.430 EDT [23343] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:03.430 EDT [23343] DETAIL:  Key (isbn)=(978-9974-6-6329-3) already exists.
+2018-07-01 17:01:03.430 EDT [23343] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:04.091 EDT [23381] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:04.091 EDT [23381] DETAIL:  Key (isbn)=(979-9988-431-13-X) already exists.
+2018-07-01 17:01:04.091 EDT [23381] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:04.759 EDT [23418] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:04.759 EDT [23418] DETAIL:  Key (isbn)=(99931-72-20-1) already exists.
+2018-07-01 17:01:04.759 EDT [23418] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:05.218 EDT [23446] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:05.218 EDT [23446] DETAIL:  Key (isbn)=(86-29919-55-X) already exists.
+2018-07-01 17:01:05.218 EDT [23446] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:05.768 EDT [23473] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:05.768 EDT [23473] DETAIL:  Key (isbn)=(978-9987-5159-4-X) already exists.
+2018-07-01 17:01:05.768 EDT [23473] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:05.948 EDT [23484] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:05.948 EDT [23484] DETAIL:  Key (isbn)=(979-614-1-82673-X) already exists.
+2018-07-01 17:01:05.948 EDT [23484] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:06.434 EDT [23509] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:06.434 EDT [23509] DETAIL:  Key (isbn)=(978-960-2310-96-X) already exists.
+2018-07-01 17:01:06.434 EDT [23509] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:06.549 EDT [23516] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:06.549 EDT [23516] DETAIL:  Key (isbn)=(978-960-2310-96-X) already exists.
+2018-07-01 17:01:06.549 EDT [23516] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:06.648 EDT [23522] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:06.648 EDT [23522] DETAIL:  Key (isbn)=(978-960-2310-96-X) already exists.
+2018-07-01 17:01:06.648 EDT [23522] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:06.722 EDT [23527] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:06.722 EDT [23527] DETAIL:  Key (isbn)=(978-960-2310-96-X) already exists.
+2018-07-01 17:01:06.722 EDT [23527] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:07.233 EDT [23552] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:07.233 EDT [23552] DETAIL:  Key (isbn)=(86-0757-209-X) already exists.
+2018-07-01 17:01:07.233 EDT [23552] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:08.026 EDT [23598] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:08.026 EDT [23598] DETAIL:  Key (isbn)=(979-9943-14-469-X) already exists.
+2018-07-01 17:01:08.026 EDT [23598] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:08.122 EDT [23604] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:08.122 EDT [23604] DETAIL:  Key (isbn)=(979-9943-14-469-X) already exists.
+2018-07-01 17:01:08.122 EDT [23604] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:08.204 EDT [23609] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:08.204 EDT [23609] DETAIL:  Key (isbn)=(978-99916-25-74-6) already exists.
+2018-07-01 17:01:08.204 EDT [23609] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:08.561 EDT [23632] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:08.561 EDT [23632] DETAIL:  Key (isbn)=(979-9943-14-469-X) already exists.
+2018-07-01 17:01:08.561 EDT [23632] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:09.387 EDT [23679] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:09.387 EDT [23679] DETAIL:  Key (isbn)=(979-86-33-23316-4) already exists.
+2018-07-01 17:01:09.387 EDT [23679] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:09.989 EDT [23713] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:09.989 EDT [23713] DETAIL:  Key (isbn)=(979-9969-759-51-9) already exists.
+2018-07-01 17:01:09.989 EDT [23713] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:10.088 EDT [23719] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:10.088 EDT [23719] DETAIL:  Key (isbn)=(979-9969-759-51-9) already exists.
+2018-07-01 17:01:10.088 EDT [23719] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:10.532 EDT [23743] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:10.532 EDT [23743] DETAIL:  Key (isbn)=(2-94-820129-X) already exists.
+2018-07-01 17:01:10.532 EDT [23743] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:14.375 EDT [23959] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:14.375 EDT [23959] DETAIL:  Key (isbn)=(607-27424-3-X) already exists.
+2018-07-01 17:01:14.375 EDT [23959] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:15.568 EDT [24024] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:15.568 EDT [24024] DETAIL:  Key (isbn)=(91-7-020427-X) already exists.
+2018-07-01 17:01:15.568 EDT [24024] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:16.253 EDT [24061] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:16.253 EDT [24061] DETAIL:  Key (isbn)=(979-5-36-667201-1) already exists.
+2018-07-01 17:01:16.253 EDT [24061] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:16.537 EDT [24076] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:16.537 EDT [24076] DETAIL:  Key (isbn)=(978-99932-956-2-X) already exists.
+2018-07-01 17:01:16.537 EDT [24076] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:16.727 EDT [24087] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:16.727 EDT [24087] DETAIL:  Key (isbn)=(979-99916-199-7-X) already exists.
+2018-07-01 17:01:16.727 EDT [24087] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:17.330 EDT [24120] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:17.330 EDT [24120] DETAIL:  Key (isbn)=(9953-40-174-X) already exists.
+2018-07-01 17:01:17.330 EDT [24120] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:18.241 EDT [24172] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:18.241 EDT [24172] DETAIL:  Key (isbn)=(979-606-72-0872-X) already exists.
+2018-07-01 17:01:18.241 EDT [24172] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:18.648 EDT [24194] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:18.648 EDT [24194] DETAIL:  Key (isbn)=(978-986-76-0653-X) already exists.
+2018-07-01 17:01:18.648 EDT [24194] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:19.177 EDT [24225] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:19.177 EDT [24225] DETAIL:  Key (isbn)=(99923-0-543-6) already exists.
+2018-07-01 17:01:19.177 EDT [24225] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:19.429 EDT [24239] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:19.429 EDT [24239] DETAIL:  Key (isbn)=(9983-521-64-X) already exists.
+2018-07-01 17:01:19.429 EDT [24239] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:19.446 EDT [24240] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:19.446 EDT [24240] DETAIL:  Key (isbn)=(9983-521-64-X) already exists.
+2018-07-01 17:01:19.446 EDT [24240] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:19.675 EDT [24253] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:19.675 EDT [24253] DETAIL:  Key (isbn)=(979-7-06-453049-0) already exists.
+2018-07-01 17:01:19.675 EDT [24253] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:19.943 EDT [24268] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:19.943 EDT [24268] DETAIL:  Key (isbn)=(979-4-9-3074402-X) already exists.
+2018-07-01 17:01:19.943 EDT [24268] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:20.671 EDT [24308] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:20.671 EDT [24308] DETAIL:  Key (isbn)=(615-483-156-X) already exists.
+2018-07-01 17:01:20.671 EDT [24308] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:21.122 EDT [24335] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:21.122 EDT [24335] DETAIL:  Key (isbn)=(979-9972-86-553-3) already exists.
+2018-07-01 17:01:21.122 EDT [24335] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:21.749 EDT [24370] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:21.749 EDT [24370] DETAIL:  Key (isbn)=(978-604-8-62633-X) already exists.
+2018-07-01 17:01:21.749 EDT [24370] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:21.853 EDT [24376] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:21.853 EDT [24376] DETAIL:  Key (isbn)=(978-604-8-62633-X) already exists.
+2018-07-01 17:01:21.853 EDT [24376] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:22.057 EDT [24388] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:22.057 EDT [24388] DETAIL:  Key (isbn)=(957-724-023-9) already exists.
+2018-07-01 17:01:22.057 EDT [24388] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:22.796 EDT [24428] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:22.796 EDT [24428] DETAIL:  Key (isbn)=(979-4-9537639-1-X) already exists.
+2018-07-01 17:01:22.796 EDT [24428] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:23.184 EDT [24453] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:23.184 EDT [24453] DETAIL:  Key (isbn)=(979-4-9537639-1-X) already exists.
+2018-07-01 17:01:23.184 EDT [24453] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:23.702 EDT [24481] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:23.702 EDT [24481] DETAIL:  Key (isbn)=(979-4-72806-389-X) already exists.
+2018-07-01 17:01:23.702 EDT [24481] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:23.765 EDT [24485] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:23.765 EDT [24485] DETAIL:  Key (isbn)=(978-619-75675-8-X) already exists.
+2018-07-01 17:01:23.765 EDT [24485] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:23.781 EDT [24486] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:23.781 EDT [24486] DETAIL:  Key (isbn)=(979-616-607-130-5) already exists.
+2018-07-01 17:01:23.781 EDT [24486] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:24.115 EDT [24506] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:24.115 EDT [24506] DETAIL:  Key (isbn)=(606-638-341-X) already exists.
+2018-07-01 17:01:24.115 EDT [24506] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:24.319 EDT [24517] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:24.319 EDT [24517] DETAIL:  Key (isbn)=(978-99937-59-79-X) already exists.
+2018-07-01 17:01:24.319 EDT [24517] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:24.400 EDT [24522] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:24.400 EDT [24522] DETAIL:  Key (isbn)=(978-99937-59-79-X) already exists.
+2018-07-01 17:01:24.400 EDT [24522] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:24.699 EDT [24540] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:24.699 EDT [24540] DETAIL:  Key (isbn)=(978-99937-59-79-X) already exists.
+2018-07-01 17:01:24.699 EDT [24540] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:25.010 EDT [24556] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:25.010 EDT [24556] DETAIL:  Key (isbn)=(978-614-7-42604-5) already exists.
+2018-07-01 17:01:25.010 EDT [24556] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:25.139 EDT [24564] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:25.139 EDT [24564] DETAIL:  Key (isbn)=(978-614-7-42604-5) already exists.
+2018-07-01 17:01:25.139 EDT [24564] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:25.666 EDT [24592] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:25.666 EDT [24592] DETAIL:  Key (isbn)=(7-5266-1324-9) already exists.
+2018-07-01 17:01:25.666 EDT [24592] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:26.003 EDT [24609] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:26.003 EDT [24609] DETAIL:  Key (isbn)=(90-078-2239-8) already exists.
+2018-07-01 17:01:26.003 EDT [24609] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:26.098 EDT [24615] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:26.098 EDT [24615] DETAIL:  Key (isbn)=(978-608-3912-37-4) already exists.
+2018-07-01 17:01:26.098 EDT [24615] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:26.381 EDT [24631] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:26.381 EDT [24631] DETAIL:  Key (isbn)=(610-2-94631-X) already exists.
+2018-07-01 17:01:26.381 EDT [24631] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:26.463 EDT [24636] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:26.463 EDT [24636] DETAIL:  Key (isbn)=(610-2-94631-X) already exists.
+2018-07-01 17:01:26.463 EDT [24636] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:27.333 EDT [24685] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:27.333 EDT [24685] DETAIL:  Key (isbn)=(87-47-68488-9) already exists.
+2018-07-01 17:01:27.333 EDT [24685] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:27.696 EDT [24706] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:27.696 EDT [24706] DETAIL:  Key (isbn)=(0-59-515736-X) already exists.
+2018-07-01 17:01:27.696 EDT [24706] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:28.300 EDT [24739] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:28.300 EDT [24739] DETAIL:  Key (isbn)=(9975-89-304-X) already exists.
+2018-07-01 17:01:28.300 EDT [24739] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:28.663 EDT [24759] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:28.663 EDT [24759] DETAIL:  Key (isbn)=(974-5661-09-5) already exists.
+2018-07-01 17:01:28.663 EDT [24759] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:28.830 EDT [24769] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:28.830 EDT [24769] DETAIL:  Key (isbn)=(974-5661-09-5) already exists.
+2018-07-01 17:01:28.830 EDT [24769] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:28.894 EDT [24773] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:28.894 EDT [24773] DETAIL:  Key (isbn)=(974-5661-09-5) already exists.
+2018-07-01 17:01:28.894 EDT [24773] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:28.937 EDT [24776] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:28.937 EDT [24776] DETAIL:  Key (isbn)=(974-8-86225-4) already exists.
+2018-07-01 17:01:28.937 EDT [24776] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:29.394 EDT [24802] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:29.394 EDT [24802] DETAIL:  Key (isbn)=(978-614-44408-5-7) already exists.
+2018-07-01 17:01:29.394 EDT [24802] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:29.634 EDT [24814] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:29.634 EDT [24814] DETAIL:  Key (isbn)=(1-89330-916-2) already exists.
+2018-07-01 17:01:29.634 EDT [24814] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:30.473 EDT [24864] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:30.473 EDT [24864] DETAIL:  Key (isbn)=(978-99946-03-29-6) already exists.
+2018-07-01 17:01:30.473 EDT [24864] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:30.517 EDT [24867] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:30.517 EDT [24867] DETAIL:  Key (isbn)=(978-99913-87-04-3) already exists.
+2018-07-01 17:01:30.517 EDT [24867] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:30.689 EDT [24875] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:30.689 EDT [24875] DETAIL:  Key (isbn)=(979-7-53-450056-8) already exists.
+2018-07-01 17:01:30.689 EDT [24875] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:30.884 EDT [24888] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:30.884 EDT [24888] DETAIL:  Key (isbn)=(979-7-53-450056-8) already exists.
+2018-07-01 17:01:30.884 EDT [24888] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:30.928 EDT [24891] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:30.928 EDT [24891] DETAIL:  Key (isbn)=(979-7-53-450056-8) already exists.
+2018-07-01 17:01:30.928 EDT [24891] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:31.580 EDT [24927] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:31.580 EDT [24927] DETAIL:  Key (isbn)=(609-67-8474-X) already exists.
+2018-07-01 17:01:31.580 EDT [24927] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:53.542 EDT [25127] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:53.542 EDT [25127] DETAIL:  Key (isbn)=(978-619-2-26552-3) already exists.
+2018-07-01 17:01:53.542 EDT [25127] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:56.186 EDT [25272] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:56.186 EDT [25272] DETAIL:  Key (isbn)=(608-57-0886-0) already exists.
+2018-07-01 17:01:56.186 EDT [25272] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:57.688 EDT [25355] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:57.688 EDT [25355] DETAIL:  Key (isbn)=(978-99910-566-3-5) already exists.
+2018-07-01 17:01:57.688 EDT [25355] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:58.727 EDT [25414] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:58.727 EDT [25414] DETAIL:  Key (isbn)=(86-5-753954-X) already exists.
+2018-07-01 17:01:58.727 EDT [25414] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:58.775 EDT [25417] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:58.775 EDT [25417] DETAIL:  Key (isbn)=(86-5-753954-X) already exists.
+2018-07-01 17:01:58.775 EDT [25417] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:59.471 EDT [25455] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:59.471 EDT [25455] DETAIL:  Key (isbn)=(80-07063-97-0) already exists.
+2018-07-01 17:01:59.471 EDT [25455] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:01:59.784 EDT [25473] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:01:59.784 EDT [25473] DETAIL:  Key (isbn)=(978-977-1-00179-X) already exists.
+2018-07-01 17:01:59.784 EDT [25473] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:00.446 EDT [25507] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:00.446 EDT [25507] DETAIL:  Key (isbn)=(99905-54-21-2) already exists.
+2018-07-01 17:02:00.446 EDT [25507] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:01.104 EDT [25544] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:01.104 EDT [25544] DETAIL:  Key (isbn)=(978-99968-688-4-X) already exists.
+2018-07-01 17:02:01.104 EDT [25544] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:01.724 EDT [25579] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:01.724 EDT [25579] DETAIL:  Key (isbn)=(978-7-24-216580-X) already exists.
+2018-07-01 17:02:01.724 EDT [25579] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:01.785 EDT [25583] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:01.785 EDT [25583] DETAIL:  Key (isbn)=(978-7-24-216580-X) already exists.
+2018-07-01 17:02:01.785 EDT [25583] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:01.800 EDT [25584] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:01.800 EDT [25584] DETAIL:  Key (isbn)=(978-7-24-216580-X) already exists.
+2018-07-01 17:02:01.800 EDT [25584] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:02.170 EDT [25602] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:02.170 EDT [25602] DETAIL:  Key (isbn)=(99934-7-694-3) already exists.
+2018-07-01 17:02:02.170 EDT [25602] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:02.237 EDT [25606] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:02.237 EDT [25606] DETAIL:  Key (isbn)=(99934-7-694-3) already exists.
+2018-07-01 17:02:02.237 EDT [25606] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:02.352 EDT [25613] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:02.352 EDT [25613] DETAIL:  Key (isbn)=(99934-7-694-3) already exists.
+2018-07-01 17:02:02.352 EDT [25613] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:04.777 EDT [25746] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:04.777 EDT [25746] DETAIL:  Key (isbn)=(9963-44-308-X) already exists.
+2018-07-01 17:02:04.777 EDT [25746] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:04.876 EDT [25752] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:04.876 EDT [25752] DETAIL:  Key (isbn)=(978-606-5-08731-7) already exists.
+2018-07-01 17:02:04.876 EDT [25752] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:05.067 EDT [25764] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:05.067 EDT [25764] DETAIL:  Key (isbn)=(978-606-5-08731-7) already exists.
+2018-07-01 17:02:05.067 EDT [25764] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:05.387 EDT [25781] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:05.387 EDT [25781] DETAIL:  Key (isbn)=(99968-0-514-9) already exists.
+2018-07-01 17:02:05.387 EDT [25781] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:05.911 EDT [25809] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:05.911 EDT [25809] DETAIL:  Key (isbn)=(607-7242-55-X) already exists.
+2018-07-01 17:02:05.911 EDT [25809] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:05.977 EDT [25813] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:05.977 EDT [25813] DETAIL:  Key (isbn)=(979-9974-26-131-X) already exists.
+2018-07-01 17:02:05.977 EDT [25813] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:06.334 EDT [25831] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:06.334 EDT [25831] DETAIL:  Key (isbn)=(972-47-2487-X) already exists.
+2018-07-01 17:02:06.334 EDT [25831] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:06.365 EDT [25833] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:06.365 EDT [25833] DETAIL:  Key (isbn)=(972-47-2487-X) already exists.
+2018-07-01 17:02:06.365 EDT [25833] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:06.474 EDT [25840] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:06.474 EDT [25840] DETAIL:  Key (isbn)=(972-47-2487-X) already exists.
+2018-07-01 17:02:06.474 EDT [25840] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:06.662 EDT [25852] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:06.662 EDT [25852] DETAIL:  Key (isbn)=(972-47-2487-X) already exists.
+2018-07-01 17:02:06.662 EDT [25852] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:07.505 EDT [25900] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:07.505 EDT [25900] DETAIL:  Key (isbn)=(99951-1-082-X) already exists.
+2018-07-01 17:02:07.505 EDT [25900] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:07.520 EDT [25901] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:07.520 EDT [25901] DETAIL:  Key (isbn)=(99951-1-082-X) already exists.
+2018-07-01 17:02:07.520 EDT [25901] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:07.550 EDT [25903] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:07.550 EDT [25903] DETAIL:  Key (isbn)=(99951-1-082-X) already exists.
+2018-07-01 17:02:07.550 EDT [25903] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:07.581 EDT [25905] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:07.581 EDT [25905] DETAIL:  Key (isbn)=(99951-1-082-X) already exists.
+2018-07-01 17:02:07.581 EDT [25905] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:09.180 EDT [25994] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:09.180 EDT [25994] DETAIL:  Key (isbn)=(7-449-97687-8) already exists.
+2018-07-01 17:02:09.180 EDT [25994] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:09.209 EDT [25996] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:09.209 EDT [25996] DETAIL:  Key (isbn)=(7-449-97687-8) already exists.
+2018-07-01 17:02:09.209 EDT [25996] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:09.562 EDT [26016] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:09.562 EDT [26016] DETAIL:  Key (isbn)=(84-8634-448-X) already exists.
+2018-07-01 17:02:09.562 EDT [26016] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:09.623 EDT [26020] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:09.623 EDT [26020] DETAIL:  Key (isbn)=(84-8634-448-X) already exists.
+2018-07-01 17:02:09.623 EDT [26020] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:11.712 EDT [26132] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:11.712 EDT [26132] DETAIL:  Key (isbn)=(979-99962-152-7-6) already exists.
+2018-07-01 17:02:11.712 EDT [26132] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:11.882 EDT [26142] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:11.882 EDT [26142] DETAIL:  Key (isbn)=(979-608-3422-74-9) already exists.
+2018-07-01 17:02:11.882 EDT [26142] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:12.879 EDT [26199] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:12.879 EDT [26199] DETAIL:  Key (isbn)=(979-9942-92-429-4) already exists.
+2018-07-01 17:02:12.879 EDT [26199] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:13.173 EDT [26217] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:13.173 EDT [26217] DETAIL:  Key (isbn)=(978-7-487401-72-1) already exists.
+2018-07-01 17:02:13.173 EDT [26217] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:13.321 EDT [26226] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:13.321 EDT [26226] DETAIL:  Key (isbn)=(978-9939-2794-5-2) already exists.
+2018-07-01 17:02:13.321 EDT [26226] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:14.673 EDT [26308] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:14.673 EDT [26308] DETAIL:  Key (isbn)=(9979-7-4133-4) already exists.
+2018-07-01 17:02:14.673 EDT [26308] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:15.003 EDT [26321] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:15.003 EDT [26321] DETAIL:  Key (isbn)=(978-5-43-013772-X) already exists.
+2018-07-01 17:02:15.003 EDT [26321] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:15.034 EDT [26323] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:15.034 EDT [26323] DETAIL:  Key (isbn)=(978-5-43-013772-X) already exists.
+2018-07-01 17:02:15.034 EDT [26323] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:15.049 EDT [26324] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:15.049 EDT [26324] DETAIL:  Key (isbn)=(978-5-43-013772-X) already exists.
+2018-07-01 17:02:15.049 EDT [26324] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:15.186 EDT [26331] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:15.186 EDT [26331] DETAIL:  Key (isbn)=(951-2-70539-X) already exists.
+2018-07-01 17:02:15.186 EDT [26331] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:16.522 EDT [26411] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:16.522 EDT [26411] DETAIL:  Key (isbn)=(979-7-7884-9316-6) already exists.
+2018-07-01 17:02:16.522 EDT [26411] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:16.607 EDT [26417] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:16.607 EDT [26417] DETAIL:  Key (isbn)=(979-7-7884-9316-6) already exists.
+2018-07-01 17:02:16.607 EDT [26417] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:16.765 EDT [26426] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:16.765 EDT [26426] DETAIL:  Key (isbn)=(85-18-66029-X) already exists.
+2018-07-01 17:02:16.765 EDT [26426] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:16.805 EDT [26429] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:16.805 EDT [26429] DETAIL:  Key (isbn)=(87-14255-63-X) already exists.
+2018-07-01 17:02:16.805 EDT [26429] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:17.074 EDT [26446] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:17.074 EDT [26446] DETAIL:  Key (isbn)=(621-9-58709-X) already exists.
+2018-07-01 17:02:17.074 EDT [26446] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:17.593 EDT [26475] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:17.593 EDT [26475] DETAIL:  Key (isbn)=(961-14-6322-9) already exists.
+2018-07-01 17:02:17.593 EDT [26475] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:17.905 EDT [26495] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:17.905 EDT [26495] DETAIL:  Key (isbn)=(978-7-70336-874-X) already exists.
+2018-07-01 17:02:17.905 EDT [26495] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:17.950 EDT [26498] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:17.950 EDT [26498] DETAIL:  Key (isbn)=(978-616-24065-7-X) already exists.
+2018-07-01 17:02:17.950 EDT [26498] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:19.147 EDT [26570] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:19.147 EDT [26570] DETAIL:  Key (isbn)=(979-2-0684144-9-X) already exists.
+2018-07-01 17:02:19.147 EDT [26570] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:19.960 EDT [26618] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:19.960 EDT [26618] DETAIL:  Key (isbn)=(978-7-03-620286-X) already exists.
+2018-07-01 17:02:19.960 EDT [26618] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:20.104 EDT [26626] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:20.104 EDT [26626] DETAIL:  Key (isbn)=(2-522832-91-X) already exists.
+2018-07-01 17:02:20.104 EDT [26626] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:20.393 EDT [26644] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:20.393 EDT [26644] DETAIL:  Key (isbn)=(603-1-50989-6) already exists.
+2018-07-01 17:02:20.393 EDT [26644] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:21.167 EDT [26689] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:21.167 EDT [26689] DETAIL:  Key (isbn)=(979-605-37358-4-X) already exists.
+2018-07-01 17:02:21.167 EDT [26689] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:21.214 EDT [26692] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:21.214 EDT [26692] DETAIL:  Key (isbn)=(979-605-37358-4-X) already exists.
+2018-07-01 17:02:21.214 EDT [26692] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:22.336 EDT [26757] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:22.336 EDT [26757] DETAIL:  Key (isbn)=(99938-7-831-4) already exists.
+2018-07-01 17:02:22.336 EDT [26757] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:22.349 EDT [26758] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:22.349 EDT [26758] DETAIL:  Key (isbn)=(985-1592-19-8) already exists.
+2018-07-01 17:02:22.349 EDT [26758] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:22.721 EDT [26780] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:22.721 EDT [26780] DETAIL:  Key (isbn)=(979-9965-846-16-X) already exists.
+2018-07-01 17:02:22.721 EDT [26780] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:22.762 EDT [26783] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:22.762 EDT [26783] DETAIL:  Key (isbn)=(978-7-7463-0767-X) already exists.
+2018-07-01 17:02:22.762 EDT [26783] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:24.589 EDT [26870] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:24.589 EDT [26870] DETAIL:  Key (isbn)=(615-6809-35-7) already exists.
+2018-07-01 17:02:24.589 EDT [26870] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:24.850 EDT [26888] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:24.850 EDT [26888] DETAIL:  Key (isbn)=(88-3250-815-X) already exists.
+2018-07-01 17:02:24.850 EDT [26888] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:24.881 EDT [26890] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:24.881 EDT [26890] DETAIL:  Key (isbn)=(88-3250-815-X) already exists.
+2018-07-01 17:02:24.881 EDT [26890] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:25.374 EDT [26917] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:25.374 EDT [26917] DETAIL:  Key (isbn)=(979-99912-943-9-X) already exists.
+2018-07-01 17:02:25.374 EDT [26917] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:25.964 EDT [26954] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:25.964 EDT [26954] DETAIL:  Key (isbn)=(89-466859-9-X) already exists.
+2018-07-01 17:02:25.964 EDT [26954] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:26.795 EDT [27004] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:26.795 EDT [27004] DETAIL:  Key (isbn)=(978-616-272-288-X) already exists.
+2018-07-01 17:02:26.795 EDT [27004] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:26.841 EDT [27007] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:26.841 EDT [27007] DETAIL:  Key (isbn)=(978-616-272-288-X) already exists.
+2018-07-01 17:02:26.841 EDT [27007] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:27.369 EDT [27035] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:27.369 EDT [27035] DETAIL:  Key (isbn)=(99918-990-7-X) already exists.
+2018-07-01 17:02:27.369 EDT [27035] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:28.447 EDT [27097] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:28.447 EDT [27097] DETAIL:  Key (isbn)=(90-65913-08-7) already exists.
+2018-07-01 17:02:28.447 EDT [27097] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:28.479 EDT [27099] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:28.479 EDT [27099] DETAIL:  Key (isbn)=(978-9976-3-6249-X) already exists.
+2018-07-01 17:02:28.479 EDT [27099] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:28.778 EDT [27114] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:28.778 EDT [27114] DETAIL:  Key (isbn)=(978-604-5478-73-4) already exists.
+2018-07-01 17:02:28.778 EDT [27114] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:28.863 EDT [27119] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:28.863 EDT [27119] DETAIL:  Key (isbn)=(99936-7-364-X) already exists.
+2018-07-01 17:02:28.863 EDT [27119] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:28.924 EDT [27123] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:28.924 EDT [27123] DETAIL:  Key (isbn)=(99936-7-364-X) already exists.
+2018-07-01 17:02:28.924 EDT [27123] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:29.298 EDT [27144] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:29.298 EDT [27144] DETAIL:  Key (isbn)=(978-90-5155-313-4) already exists.
+2018-07-01 17:02:29.298 EDT [27144] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:29.721 EDT [27167] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:29.721 EDT [27167] DETAIL:  Key (isbn)=(961-9-12599-X) already exists.
+2018-07-01 17:02:29.721 EDT [27167] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.049 EDT [27186] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.049 EDT [27186] DETAIL:  Key (isbn)=(5-08900-862-2) already exists.
+2018-07-01 17:02:30.049 EDT [27186] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.160 EDT [27193] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.160 EDT [27193] DETAIL:  Key (isbn)=(5-08900-862-2) already exists.
+2018-07-01 17:02:30.160 EDT [27193] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.174 EDT [27194] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.174 EDT [27194] DETAIL:  Key (isbn)=(5-08900-862-2) already exists.
+2018-07-01 17:02:30.174 EDT [27194] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.243 EDT [27199] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.243 EDT [27199] DETAIL:  Key (isbn)=(5-08900-862-2) already exists.
+2018-07-01 17:02:30.243 EDT [27199] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.732 EDT [27224] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.732 EDT [27224] DETAIL:  Key (isbn)=(3-5-4578052-X) already exists.
+2018-07-01 17:02:30.732 EDT [27224] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.782 EDT [27227] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.782 EDT [27227] DETAIL:  Key (isbn)=(3-5-4578052-X) already exists.
+2018-07-01 17:02:30.782 EDT [27227] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.812 EDT [27229] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.812 EDT [27229] DETAIL:  Key (isbn)=(3-5-4578052-X) already exists.
+2018-07-01 17:02:30.812 EDT [27229] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:30.982 EDT [27240] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:30.982 EDT [27240] DETAIL:  Key (isbn)=(3-5-4578052-X) already exists.
+2018-07-01 17:02:30.982 EDT [27240] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:31.120 EDT [27249] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:31.120 EDT [27249] DETAIL:  Key (isbn)=(979-9951-2280-5-X) already exists.
+2018-07-01 17:02:31.120 EDT [27249] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:31.537 EDT [27273] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:31.537 EDT [27273] DETAIL:  Key (isbn)=(5-1-1627486-X) already exists.
+2018-07-01 17:02:31.537 EDT [27273] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.180 EDT [27309] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.180 EDT [27309] DETAIL:  Key (isbn)=(979-99902-8-279-X) already exists.
+2018-07-01 17:02:32.180 EDT [27309] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.195 EDT [27310] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.195 EDT [27310] DETAIL:  Key (isbn)=(979-99902-8-279-X) already exists.
+2018-07-01 17:02:32.195 EDT [27310] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.221 EDT [27312] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.221 EDT [27312] DETAIL:  Key (isbn)=(979-99902-8-279-X) already exists.
+2018-07-01 17:02:32.221 EDT [27312] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.248 EDT [27314] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.248 EDT [27314] DETAIL:  Key (isbn)=(979-99902-8-279-X) already exists.
+2018-07-01 17:02:32.248 EDT [27314] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.514 EDT [27327] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.514 EDT [27327] DETAIL:  Key (isbn)=(978-7-872-31718-X) already exists.
+2018-07-01 17:02:32.514 EDT [27327] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.561 EDT [27330] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.561 EDT [27330] DETAIL:  Key (isbn)=(978-7-872-31718-X) already exists.
+2018-07-01 17:02:32.561 EDT [27330] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.737 EDT [27341] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.737 EDT [27341] DETAIL:  Key (isbn)=(978-7-872-31718-X) already exists.
+2018-07-01 17:02:32.737 EDT [27341] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:32.934 EDT [27351] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:32.934 EDT [27351] DETAIL:  Key (isbn)=(979-952-3773-80-8) already exists.
+2018-07-01 17:02:32.934 EDT [27351] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:33.019 EDT [27356] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:33.019 EDT [27356] DETAIL:  Key (isbn)=(979-952-3773-80-8) already exists.
+2018-07-01 17:02:33.019 EDT [27356] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:33.037 EDT [27357] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:33.037 EDT [27357] DETAIL:  Key (isbn)=(979-952-3773-80-8) already exists.
+2018-07-01 17:02:33.037 EDT [27357] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:33.055 EDT [27358] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:33.055 EDT [27358] DETAIL:  Key (isbn)=(979-952-3773-80-8) already exists.
+2018-07-01 17:02:33.055 EDT [27358] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:33.069 EDT [27359] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:33.069 EDT [27359] DETAIL:  Key (isbn)=(979-952-3773-80-8) already exists.
+2018-07-01 17:02:33.069 EDT [27359] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:33.618 EDT [27390] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:33.618 EDT [27390] DETAIL:  Key (isbn)=(89-5056-882-X) already exists.
+2018-07-01 17:02:33.618 EDT [27390] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:33.915 EDT [27406] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:33.915 EDT [27406] DETAIL:  Key (isbn)=(986-310-660-1) already exists.
+2018-07-01 17:02:33.915 EDT [27406] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:34.480 EDT [27437] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:34.480 EDT [27437] DETAIL:  Key (isbn)=(978-606-463-033-4) already exists.
+2018-07-01 17:02:34.480 EDT [27437] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:34.695 EDT [27450] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:34.695 EDT [27450] DETAIL:  Key (isbn)=(978-606-463-033-4) already exists.
+2018-07-01 17:02:34.695 EDT [27450] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:34.988 EDT [27465] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:34.988 EDT [27465] DETAIL:  Key (isbn)=(978-99935-126-9-1) already exists.
+2018-07-01 17:02:34.988 EDT [27465] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:35.068 EDT [27470] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:35.068 EDT [27470] DETAIL:  Key (isbn)=(978-99935-126-9-1) already exists.
+2018-07-01 17:02:35.068 EDT [27470] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:35.177 EDT [27477] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:35.177 EDT [27477] DETAIL:  Key (isbn)=(99948-3-763-X) already exists.
+2018-07-01 17:02:35.177 EDT [27477] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:35.340 EDT [27488] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:35.340 EDT [27488] DETAIL:  Key (isbn)=(978-99935-126-9-1) already exists.
+2018-07-01 17:02:35.340 EDT [27488] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:36.040 EDT [27525] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:36.040 EDT [27525] DETAIL:  Key (isbn)=(4-6-6544124-X) already exists.
+2018-07-01 17:02:36.040 EDT [27525] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:36.069 EDT [27527] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:36.069 EDT [27527] DETAIL:  Key (isbn)=(978-4-9942060-0-X) already exists.
+2018-07-01 17:02:36.069 EDT [27527] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:36.143 EDT [27532] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:36.143 EDT [27532] DETAIL:  Key (isbn)=(978-4-9942060-0-X) already exists.
+2018-07-01 17:02:36.143 EDT [27532] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:36.515 EDT [27551] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:36.515 EDT [27551] DETAIL:  Key (isbn)=(979-9952-7-7077-X) already exists.
+2018-07-01 17:02:36.515 EDT [27551] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:36.559 EDT [27554] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:36.559 EDT [27554] DETAIL:  Key (isbn)=(979-9974-3-0097-X) already exists.
+2018-07-01 17:02:36.559 EDT [27554] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:37.376 EDT [27603] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:37.376 EDT [27603] DETAIL:  Key (isbn)=(979-977-90-8934-X) already exists.
+2018-07-01 17:02:37.376 EDT [27603] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:37.755 EDT [27624] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:37.755 EDT [27624] DETAIL:  Key (isbn)=(979-7-8-2706022-8) already exists.
+2018-07-01 17:02:37.755 EDT [27624] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:37.858 EDT [27630] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:37.858 EDT [27630] DETAIL:  Key (isbn)=(979-7-8-2706022-8) already exists.
+2018-07-01 17:02:37.858 EDT [27630] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:38.021 EDT [27641] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:38.021 EDT [27641] DETAIL:  Key (isbn)=(93-896-8523-0) already exists.
+2018-07-01 17:02:38.021 EDT [27641] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:38.418 EDT [27664] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:38.418 EDT [27664] DETAIL:  Key (isbn)=(978-5-0754925-9-3) already exists.
+2018-07-01 17:02:38.418 EDT [27664] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:39.385 EDT [27719] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:39.385 EDT [27719] DETAIL:  Key (isbn)=(9951-315-58-X) already exists.
+2018-07-01 17:02:39.385 EDT [27719] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:39.680 EDT [27737] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:39.680 EDT [27737] DETAIL:  Key (isbn)=(9984-7-6532-X) already exists.
+2018-07-01 17:02:39.680 EDT [27737] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:40.238 EDT [27771] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:40.238 EDT [27771] DETAIL:  Key (isbn)=(978-976-451-755-6) already exists.
+2018-07-01 17:02:40.238 EDT [27771] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:40.456 EDT [27782] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:40.456 EDT [27782] DETAIL:  Key (isbn)=(966-027-692-X) already exists.
+2018-07-01 17:02:40.456 EDT [27782] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:41.100 EDT [27819] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:41.100 EDT [27819] DETAIL:  Key (isbn)=(7-7591958-3-X) already exists.
+2018-07-01 17:02:41.100 EDT [27819] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:41.303 EDT [27831] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:41.303 EDT [27831] DETAIL:  Key (isbn)=(7-7591958-3-X) already exists.
+2018-07-01 17:02:41.303 EDT [27831] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:43.984 EDT [27979] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:43.984 EDT [27979] DETAIL:  Key (isbn)=(979-9959-89-789-7) already exists.
+2018-07-01 17:02:43.984 EDT [27979] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:44.028 EDT [27982] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:44.028 EDT [27982] DETAIL:  Key (isbn)=(978-7-5-6686104-6) already exists.
+2018-07-01 17:02:44.028 EDT [27982] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:44.060 EDT [27984] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:44.060 EDT [27984] DETAIL:  Key (isbn)=(979-952-3634-75-1) already exists.
+2018-07-01 17:02:44.060 EDT [27984] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-01 17:02:44.945 EDT [28033] ERROR:  duplicate key value violates unique constraint "books_pkey"
+2018-07-01 17:02:44.945 EDT [28033] DETAIL:  Key (isbn)=(978-7-57715-835-4) already exists.
+2018-07-01 17:02:44.945 EDT [28033] STATEMENT:  INSERT INTO books (isbn, title, author, owned, available)        VALUES     ($1,   $2,    $3,     $4,    $5       );
+2018-07-24 06:32:37.575 EDT [1594] LOG:  received smart shutdown request
+2018-07-24 06:32:37.645 EDT [1594] LOG:  worker process: logical replication launcher (PID 1601) exited with exit code 1
+2018-07-24 06:32:37.645 EDT [1596] LOG:  shutting down
+2018-07-24 06:32:38.636 EDT [1594] LOG:  database system is shut down
